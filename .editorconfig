@@ -6,4 +6,4 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 6
 quote_type = double
-max_line_length = 120
+max_line_length = 1000
