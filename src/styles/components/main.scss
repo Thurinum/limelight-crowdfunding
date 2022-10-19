@@ -1,0 +1,52 @@
+main {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-areas: "heading heading" "image content";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    max-width: $breakpoint-md - 100;
+
+    h1 {
+        grid-area: heading;
+    }
+
+    > img {
+        height: 580px;
+        object-fit: cover;
+    }
+
+    .social .icon {
+        height: 35px;
+    }    
+
+    .content {
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .money {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+
+            .current {
+                font-size: 55pt;
+            }
+
+            .goal {
+                font-size: 40pt;
+
+                small {
+                    font-size: 24pt;
+                }
+            }
+        }
+    }
+}

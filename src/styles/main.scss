@@ -27,6 +27,11 @@
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import 'components/icons';
+@import 'components/header.scss';
+@import 'components/main.scss';
+@import 'components/article.scss';
+@import 'components/plans.scss';
+@import 'components/footer.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

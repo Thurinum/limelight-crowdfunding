@@ -11,17 +11,25 @@
 	<script src="scripts/main.js" defer></script>
 </head>
 
-<body class="wrapper">
+<body>
+	<div class="wrapper">
 	<header>
-		<span class="logo"><img src="assets/icons/logo.svg" alt="Plateforme de sociofinancement"
-				class="icon" />Limelight</span>
-		<a href="#" class="link"><img src="assets/icons/explore.svg" alt="">Explorer les projets</a>
-		<a href="#" class="link"><img src="assets/icons/getstarted.svg" alt="">Demarrer votre projet</a>
+		<a class="logo"><img src="assets/icons/logo.svg" alt="Plateforme de sociofinancement"
+				class="icon" />Limelight</a>
 
-		<input type="text" placeholder="Rechercher" class="search" />
+		<span class="wrapper">
+			<nav class="links">
+				<a href="#" class="link"><img src="assets/icons/explore.svg" alt="">Explorer les projets</a>
+				<a href="#" class="link"><img src="assets/icons/getstarted.svg" alt="">Demarrer votre projet</a>
+			</nav>
+	
+			<input type="text" placeholder="Rechercher" class="search" />
+		</span>
 
-		<a href="#" class="login">Connexion</a>
-		<a href="#" class="signup">Creer un compte</a>
+		<nav class="actions">
+			<a href="#" class="login">Connexion</a>
+			<a href="#" class="signup">Creer un compte</a>
+		</nav>
 	</header>
 
 	<!-- main crowdfunding screen -->
@@ -42,11 +50,11 @@
 			<button class="contribute">Contribuer</button>
 			<p class="nb-contributors">69 contributeurs</p>
 			<div class="social">
-				<a href="#"><img src="assets/icons/social/facebook.svg" alt="Facebook"></a>
-				<a href="#"><img src="assets/icons/social/twitter.svg" alt="Twitter"></a>
-				<a href="#"><img src="assets/icons/social/favorite.webp" alt="Add to favorites"></a>
-				<a href="#"><img src="assets/icons/social/instagram.svg" alt="Instagram"></a>
-				<a href="#"><img src="assets/icons/social/share.svg" alt="Share"></a>
+				<a href="#" class="icon"><img src="assets/icons/social/facebook.svg" alt="Facebook"></a>
+				<a href="#" class="icon"><img src="assets/icons/social/twitter.svg" alt="Twitter"></a>
+				<a href="#" class="icon"><img src="assets/icons/social/favorite.webp" alt="Add to favorites"></a>
+				<a href="#" class="icon"><img src="assets/icons/social/instagram.svg" alt="Instagram"></a>
+				<a href="#" class="icon"><img src="assets/icons/social/share.svg" alt="Share"></a>
 			</div>
 		</div>
 	</main>
@@ -158,6 +166,7 @@
 		</div>
 		<p class="legal">&copy; 2022 RSM Designing Services Ltd. Tous droits octroyés.</p>
 	</footer>
+</div>
 </body>
 
 </html>
