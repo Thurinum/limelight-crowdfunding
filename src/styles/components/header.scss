@@ -1,17 +1,19 @@
 header {
-    display: grid;
-   
-    grid-template-columns: 1fr min(50vw, $breakpoint-md) 1fr;
-    grid-template-rows: 100%;
+	height: 75px;
 
-    align-items: center;
+	display: grid;
+	grid-template-columns: 1fr $breakpoint-md 1fr;
+	grid-template-rows: 100%;
+	align-items: center;
 
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+	background-color: var(--color-foreground);
+	
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    nav.actions {
-        text-align: right;
-    }
+	nav.actions {
+		text-align: right;
+	}
 }

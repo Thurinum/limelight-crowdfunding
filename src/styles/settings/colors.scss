@@ -3,17 +3,20 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
-    --color-white: #fff;
-    --color-black: #0c0f0a;
+	// Couleurs de base
+	--color-white: #fff;
+	--color-black: #0c0f0a;
 
-    // Couleurs du projet
-    --color-primary: #c3d898;
-    --color-primary-darker: #285943;
-    --color-secondary: #eb8258;
+	// Couleurs du projet
+	--color-foreground: #E9E4DD;
+	--color-background: #FEFAF8;
+	--color-background-dark: #F6F4F2;
+	--color-background-darker: #F2EFEB;
+	--color-background-darkest: #E5E5E5;
+	
 
-    --color-neutral-light: #eeeeee;
-    --color-neutral-dark: #888888;
+	--color-accent-light: #ABA39D;
+	--color-accent-dark: #393431;
 
-    --color-fail: #f6511d;
+	--color-link: #674721;
 }
