@@ -1,0 +1,27 @@
+footer {
+	.wrapper {
+		display: grid;
+		grid-template-areas: "about links" "legal legal";
+
+		padding: {
+			left: 15px;
+			right: 15px;
+			top: 60px;
+			bottom: 40px;
+		}
+
+		.about {
+			grid-area: about;
+		}
+
+		.links {
+			display: flex;
+			grid-area: links;
+		}
+
+		.legal {
+			grid-area: legal;
+			text-align: center;
+		}
+	}
+}
