@@ -5,6 +5,7 @@ main {
 	background-image: url(/assets/images/product_background.webp);
 	background-size: cover;
 	background-position: center;
+	box-shadow: 0 -2px 17px rgba(0, 0, 0, 0.2);
 
 	.wrapper {
 		margin: {
@@ -118,7 +119,8 @@ main {
 					
 					.filling {
 						width: 290px;
-						height: 100%;
+						height: 8px;
+						box-sizing: content-box;
 						
 						border: solid 1px var(--color-accent-dark);
 						border-radius: 5px;
