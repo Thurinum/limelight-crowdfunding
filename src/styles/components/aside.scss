@@ -55,9 +55,10 @@ section.content .wrapper aside.contributions {
 		}
 
 		.body {
+
 			padding: {
-				left: 10px;
-				right: 10px;
+				left: $aside-card-inner-padding;
+				right: $aside-card-inner-padding;
 			}
 
 			.list-title {
@@ -67,7 +68,7 @@ section.content .wrapper aside.contributions {
 
 			ul {
 				margin-top: 0;
-				padding-left: 10px;
+				padding-left: $aside-card-inner-padding;
 				font-size: 15px;
 				list-style-type: none;
 			}
@@ -93,13 +94,13 @@ section.content .wrapper aside.contributions {
 			width: 100%;
 			height: fit-content;
 			padding: {
-				top: 10px;
-				bottom: 10px;
+				top: $aside-card-inner-padding;
+				bottom: $aside-card-inner-padding;
 			}
 
 			border: solid 1px var(--color-accent-dark);
 			border-bottom-width: 0.5;
-			border-radius: 10px;
+			border-radius: $radius-small;
 			background-color: var(--color-background-darker);
 			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
 

@@ -1,0 +1,14 @@
+Modifications apportées au design
+=================================
+
+- La barre de recherche du header est plus petite.
+	POUR: Qu'elle soit de la même taille que les liens Explorer/Démarrer.
+
+- La police du titre du produit est changée de Rockwell à Sanchez.
+	CAR: Rockwell est une police propriétaire (pas sur Google Fonts).
+
+- La police de la description du produit est changée de Inter à Roboto.
+	CAR: C'était une erreur dans le design. Elle aurait dû être Roboto.
+
+- Les boutons Contribuer dans le welcome et les cartes de contreparties n'a plus de taille fixe.
+	CAR: Il est mieux d'utiliser le padding pour s'assurer d'un texte bien aligné.

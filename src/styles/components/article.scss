@@ -10,15 +10,15 @@ section.content {
 			min-width: 840px;
 
 			padding: {
-				left: 45px;
-				right: 45px;
-				top: 45px;
-				bottom: 45px;
+				left: $article-padding;
+				right: $article-padding;
+				top: $article-padding;
+				bottom: $article-padding;
 			}
 
 			display: flex;
 			flex-direction: column;
-			gap: 45px;
+			gap: $article-padding;
 
 			border: solid 1px var(--color-accent-light);
 			border-radius: $radius-secondary;
@@ -50,7 +50,7 @@ section.content {
 
 			img {
 				border: solid 2px var(--color-accent-light);
-				border-radius: 10px;
+				border-radius: $radius-small;
 			}
 
 			p {
