@@ -1,5 +1,11 @@
 header {
 	height: 75px;
+	padding: {
+		left: 35px;
+		right: 35px;
+	}
+
+	position: sticky;
 
 	display: grid;
 	grid-template-columns: 1fr $breakpoint-md 1fr;
@@ -74,6 +80,7 @@ header {
 				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 
 				font-size: 14px;
+				line-height: 1;
 			}
 			input::placeholder {
 				color: var(--color-black);
@@ -82,6 +89,31 @@ header {
 	}
 
 	nav.actions {
-		text-align: right;
+		display: flex;
+		justify-self: right;
+		align-items: center;
+		gap: 10px;
+
+		font-size: 14px;
+		line-height: 1;
+
+		a.login {
+			color: var(--color-link);
+		}
+		a.signup {
+			padding: {
+				left: 17px;
+				right: 17px;
+				top: 9px;
+				bottom: 9px;
+			}
+
+			border: solid 2px var(--color-black);
+			border-radius: 10px;
+			background-color: var(--color-background-darker);
+			box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.1);
+
+			font-weight: bold;
+		}
 	}
 }
