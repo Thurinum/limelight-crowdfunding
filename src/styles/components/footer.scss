@@ -2,6 +2,8 @@ footer {
 	.wrapper {
 		display: grid;
 		grid-template-areas: "about links" "legal legal";
+		row-gap: 40px;
+		column-gap: 160px;
 
 		padding: {
 			left: 15px;
@@ -12,15 +14,53 @@ footer {
 
 		.about {
 			grid-area: about;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			font-size: 16px;
+			line-height: 145%;
+
+			.logo {
+				display: flex;
+				align-items: center;
+				gap: 13px;
+				
+				font-size: 40px;
+				font-family: var(--font-logo);
+			}
+
+			p {
+				height: 78px;
+			}
+
+			.social {
+				padding: {
+					top: 20px;
+					bottom: 15px;
+				}
+
+				display: flex;
+				gap: 35px;
+			}
 		}
 
 		.links {
 			display: flex;
 			grid-area: links;
+
+			ul {
+				padding-left: 0;
+				list-style-type: none;
+			}
 		}
 
 		.legal {
 			grid-area: legal;
+
+			font-family: var(--font-secondary);
+			line-height: 150%;
 			text-align: center;
 		}
 	}
