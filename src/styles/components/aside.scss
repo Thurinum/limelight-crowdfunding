@@ -1,14 +1,21 @@
 section.content .wrapper aside.contributions {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
 	.card {
-		border: solid 1px var(--color-accent-dark);
-		border-radius: $radius-secondary;
+		padding: 25px;
+
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		padding: 25px;
+
+		border: solid 1px var(--color-accent-dark);
+		border-radius: $radius-secondary;
+		box-shadow: 0 7px 8px rgba(0, 0, 0, 0.17);
 
 		img {
-			min-width: 315px;
+			min-width: 314px;
 			height: 235px;
 
 			margin: {
@@ -29,25 +36,76 @@ section.content .wrapper aside.contributions {
 			justify-content: space-between;
 			align-items: baseline;
 
+			line-height: 1;
+
 			.title {
 				font-size: 30px;
 			}
 
 			.price {
 				font-size: 32px;
-				font-weight: bold;
+				font-weight: $weight-medium;
 
 				.currency {
 					font-size: 20px;
-					font-variant: small-caps;
+					text-transform: capitalize;
+					font-weight: normal;
 				}
 			}
 		}
 
-		.body {}
+		.body {
+			padding: {
+				left: 10px;
+				right: 10px;
+			}
 
-		.stats {}
+			.list-title {
+				font-size: 18px;
+				font-weight: bold;
+			}
 
-		.button {}
+			ul {
+				margin-top: 0;
+				padding-left: 10px;
+				font-size: 15px;
+				list-style-type: none;
+			}
+
+			li {
+				line-height: 139%;
+			}
+			li::before {
+				content: "\2022\00A0\00A0";
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.stats {
+				display: flex;
+				justify-content: space-between;
+
+				font-size: 14px;
+			}
+		}
+
+		.button {
+			width: 100%;
+			height: fit-content;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			}
+
+			border: solid 1px var(--color-accent-dark);
+			border-bottom-width: 0.5;
+			border-radius: 10px;
+			background-color: var(--color-background-darker);
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+
+			font-size: 24px;
+			font-weight: $weight-medium;
+			text-align: center;
+		}
 	}
 }

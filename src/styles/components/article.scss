@@ -49,8 +49,14 @@ section.content {
 			}
 
 			img {
-				border: solid 1px var(--color-accent-dark);
+				border: solid 2px var(--color-accent-light);
 				border-radius: 10px;
+			}
+
+			p {
+				margin: 0;
+				font-size: 20px;
+				line-height: 175%;
 			}
 		}
 	}
