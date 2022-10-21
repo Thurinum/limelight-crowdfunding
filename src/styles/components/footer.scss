@@ -1,9 +1,14 @@
 footer {
+	border-top: solid 1px var(--color-accent-light);
+	background-image: url("/assets/images/footer_background.webp");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 -2px 17px rgba(0, 0, 0, 0.2);
+
 	.wrapper {
 		display: grid;
 		grid-template-areas: "about links" "legal legal";
 		row-gap: 40px;
-		column-gap: 160px;
 
 		padding: {
 			left: 15px;
@@ -32,6 +37,7 @@ footer {
 			}
 
 			p {
+				width: 374px;
 				height: 78px;
 			}
 
@@ -47,17 +53,32 @@ footer {
 		}
 
 		.links {
-			display: flex;
 			grid-area: links;
 
+			display: flex;
+			justify-content: space-between;
+
+			h6 {
+				font-size: 20px;
+				margin-bottom: 20px;
+				line-height: 140%;
+			}
+
 			ul {
-				padding-left: 0;
+				padding-left: 0;				
 				list-style-type: none;
+				
+				li {
+					padding-bottom: 6px;
+					font-size: 16px;
+				}
 			}
 		}
 
 		.legal {
 			grid-area: legal;
+
+			margin: 0;
 
 			font-family: var(--font-secondary);
 			line-height: 150%;
