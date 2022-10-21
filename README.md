@@ -1,2 +1,3 @@
 - Make search bar smaller to fit links
 - Change font of main heading bc its propr
+- Change font of details text to roboto
