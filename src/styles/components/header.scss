@@ -6,11 +6,79 @@ header {
 	grid-template-rows: 100%;
 	align-items: center;
 
-	background-color: var(--color-foreground);
+	background-color: var(--color-background);
+	box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+
+	.logo {
+		display: flex;
+		gap: 13px;
+		align-items: center;
+
+		font-size: 40px;
+		font-family: var(--font-logo);
+
+		img {
+			height: 45px;
+		}
+	}
 	
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		$nav-width: 320px;
+
+		nav.links {
+			width: $nav-width;
+
+			display: flex;
+			justify-content: space-between;
+
+			.link {
+				display: flex;
+				gap: 10px;
+				align-items: center;
+
+				line-height: 1;
+				font-size: 14px;
+			}
+		}
+
+		.search-bar {
+			position: relative;
+
+			img {
+				width: 14px;
+				height: 14px;
+
+				position: absolute;
+				top: 50%;
+				left: 9px;
+				transform: translate(0, -50%);				
+			}
+
+			input {
+				width: $nav-width;
+				height: 33px;
+
+				padding: {
+					left: 14px + 10px + 9px;
+					right: 9px;
+					top: 4px;
+					bottom: 4px;
+				}
+
+				border: solid 1px var(--color-accent-dark);
+				border-radius: 10px;
+				background-color: var(--color-background-dark);
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+
+				font-size: 14px;
+			}
+			input::placeholder {
+				color: var(--color-black);
+			}
+		}
 	}
 
 	nav.actions {
